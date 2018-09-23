@@ -11,39 +11,44 @@ Page {
     title: qsTr("Page 1")
 
     C1.SplitView {
-        anchors.fill: parent
+        id: splitView
+        anchors.right: parent.right
+        anchors.rightMargin: 0
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
+        anchors.top: parent.top
         orientation: Qt.Horizontal
 
-        Rectangle {
-            width: 200
-            Layout.maximumWidth: 400
-            color: "lightblue"
-            border.width: 2
+        Item {
+            width: parent.width / 3
+            height: parent.height
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 0
+            anchors.top: parent.top
+            anchors.topMargin: 0
+            enabled: true
             Text {
                 text: "View 1"
                 anchors.centerIn: parent
             }
         }
-        Rectangle {
-            id: centerItem
-            Layout.minimumWidth: 50
-            Layout.fillWidth: true
-            color: "lightgray"
-            border.width: 2
+        Item {
+            width: parent.width *2 / 3
+            height: parent.height
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 0
+            anchors.top: parent.top
+            anchors.topMargin: 0
             Text {
                 text: "View 2"
-                anchors.centerIn: parent
-            }
-        }
-        Rectangle {
-            width: 200
-            color: "lightgreen"
-            border.width: 2
-            Text {
-                text: "View 3"
                 anchors.centerIn: parent
             }
         }
     }
 
 }
+
+/*##^## Designer {
+    D{i:2;anchors_height:400;anchors_width:200}D{i:4;anchors_height:410}
+}
+ ##^##*/
