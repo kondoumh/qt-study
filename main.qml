@@ -1,5 +1,6 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.2
+import QtQuick.Controls 1.4 as C1
 
 ApplicationWindow {
     id: window
@@ -63,6 +64,10 @@ ApplicationWindow {
                 }
             }
         }
+    }
+
+    footer: C1.StatusBar {
+
     }
 
     StackView {
