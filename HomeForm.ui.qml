@@ -8,16 +8,6 @@ Page {
 
     title: qsTr("Home")
 
-    C1.TreeView {
-        anchors.fill: parent
-        model: mymodel
-        C1.TableViewColumn {
-            role: "display"
-            title: "Elements"
-            width: 100
-        }
-    }
-
     Label {
         text: qsTr("You are on the home page.")
         anchors.centerIn: parent

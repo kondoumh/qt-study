@@ -19,17 +19,18 @@ Page {
         anchors.top: parent.top
         orientation: Qt.Horizontal
 
-        Item {
+        C1.TreeView {
             width: parent.width / 3
             height: parent.height
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 0
             anchors.top: parent.top
             anchors.topMargin: 0
-            enabled: true
-            Text {
-                text: "View 1"
-                anchors.centerIn: parent
+            model: mymodel
+            C1.TableViewColumn {
+                role: "display"
+                title: "Elements"
+                width: 100
             }
         }
         Item {
