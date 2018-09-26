@@ -1,11 +1,13 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QQuickStyle>
 #include "treeviewmodel.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QQuickStyle::setStyle("Material");
 
     QGuiApplication app(argc, argv);
 
@@ -14,7 +16,7 @@ int main(int argc, char *argv[])
     TreeViewModel mymodel;
     engine.rootContext()->setContextProperty("mymodel", &mymodel);
 
-    engine.load(QUrl(QStringLiteral("qrc:/mainListView.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/mainDialog.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
 
