@@ -7,5 +7,6 @@
         <file>qtquickcontrols2.conf</file>
         <file>mainListView.qml</file>
         <file>mainDialog.qml</file>
+        <file>fileDialog.qml</file>
     </qresource>
 </RCC>
