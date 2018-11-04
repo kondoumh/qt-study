@@ -8,5 +8,6 @@
         <file>mainListView.qml</file>
         <file>mainDialog.qml</file>
         <file>fileDialog.qml</file>
+        <file>mainTabView.qml</file>
     </qresource>
 </RCC>
