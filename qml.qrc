@@ -9,5 +9,6 @@
         <file>mainDialog.qml</file>
         <file>fileDialog.qml</file>
         <file>mainTabView.qml</file>
+        <file>mainChartsView.qml</file>
     </qresource>
 </RCC>
