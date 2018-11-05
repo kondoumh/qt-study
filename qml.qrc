@@ -10,5 +10,6 @@
         <file>fileDialog.qml</file>
         <file>mainTabView.qml</file>
         <file>mainChartsView.qml</file>
+        <file>mainDial.qml</file>
     </qresource>
 </RCC>

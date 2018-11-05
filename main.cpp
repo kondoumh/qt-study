@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     TreeViewModel mymodel;
     engine.rootContext()->setContextProperty("mymodel", &mymodel);
 
-    engine.load(QUrl(QStringLiteral("qrc:/mainTabView.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/mainDial.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
 
