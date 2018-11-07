@@ -11,5 +11,6 @@
         <file>mainTabView.qml</file>
         <file>mainChartsView.qml</file>
         <file>mainDial.qml</file>
+        <file>mainCombo.qml</file>
     </qresource>
 </RCC>
